@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\Projects\\VRClass\\VRClass\\Source\\VRClass\\VRClass.Build.cs",
+		"D:\\Projects\\VRClass\\VRClass\\Source\\VRClass.Target.cs",
+		"D:\\Projects\\VRClass\\VRClass\\Source\\VRClassEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.2"
+}
