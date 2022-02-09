@@ -32,8 +32,8 @@
 /wd4244
 /wd4838
 /I .
-/I D:\Projects\VRClass\VRClass\Intermediate\Build\Win64\UE4Editor\Inc\VRClass
-/I D:\Projects\VRClass\VRClass\Source
+/I "C:\Users\tyler\Documents\Unreal Projects\VRClass\VRClass\Intermediate\Build\Win64\UE4Editor\Inc\VRClass"
+/I "C:\Users\tyler\Documents\Unreal Projects\VRClass\VRClass\Source"
 /I Runtime
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
@@ -260,18 +260,18 @@
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\RenderDebug\public
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\PairFilter\include
 /I ThirdParty\PhysX3\APEX_1.4\shared\internal\include
-/I D:\Programs\VS\VC\Tools\MSVC\14.29.30133\INCLUDE
+/I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
-/FI"D:\Projects\VRClass\VRClass\Intermediate\Build\Win64\VRClassEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"D:\Projects\VRClass\VRClass\Intermediate\Build\Win64\VRClassEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"D:\Projects\VRClass\VRClass\Intermediate\Build\Win64\VRClassEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"D:\Projects\VRClass\VRClass\Source\VRClass\VRClassCharacter.cpp"
-/FI"D:\Projects\VRClass\VRClass\Intermediate\Build\Win64\UE4Editor\Development\VRClass\Definitions.VRClass.h"
-/Fo"D:\Projects\VRClass\VRClass\Intermediate\Build\Win64\UE4Editor\Development\VRClass\VRClassCharacter.cpp.obj"
+/FI"C:\Users\tyler\Documents\Unreal Projects\VRClass\VRClass\Intermediate\Build\Win64\VRClassEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"C:\Users\tyler\Documents\Unreal Projects\VRClass\VRClass\Intermediate\Build\Win64\VRClassEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"C:\Users\tyler\Documents\Unreal Projects\VRClass\VRClass\Intermediate\Build\Win64\VRClassEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"C:\Users\tyler\Documents\Unreal Projects\VRClass\VRClass\Source\VRClass\VRClassCharacter.cpp"
+/FI"C:\Users\tyler\Documents\Unreal Projects\VRClass\VRClass\Intermediate\Build\Win64\UE4Editor\Development\VRClass\Definitions.VRClass.h"
+/Fo"C:\Users\tyler\Documents\Unreal Projects\VRClass\VRClass\Intermediate\Build\Win64\UE4Editor\Development\VRClass\VRClassCharacter.cpp.obj"
 /TP
 /GR-
 /W4

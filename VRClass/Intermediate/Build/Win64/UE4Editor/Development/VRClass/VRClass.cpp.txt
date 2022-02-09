@@ -1,2 +1,2 @@
-D:\Projects\VRClass\VRClass\Intermediate\Build\Win64\UE4Editor\Development\VRClass\Definitions.VRClass.h
-D:\Projects\VRClass\VRClass\Source\VRClass\VRClass.h
+C:\Users\tyler\Documents\Unreal Projects\VRClass\VRClass\Intermediate\Build\Win64\UE4Editor\Development\VRClass\Definitions.VRClass.h
+C:\Users\tyler\Documents\Unreal Projects\VRClass\VRClass\Source\VRClass\VRClass.h

@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "VRClass",
-			"Path": "D:\\Projects\\VRClass\\VRClass\\Source\\VRClass.Target.cs",
+			"Path": "C:\\Users\\tyler\\Documents\\Unreal Projects\\VRClass\\VRClass\\Source\\VRClass.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "VRClassEditor",
-			"Path": "D:\\Projects\\VRClass\\VRClass\\Source\\VRClassEditor.Target.cs",
+			"Path": "C:\\Users\\tyler\\Documents\\Unreal Projects\\VRClass\\VRClass\\Source\\VRClassEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]
