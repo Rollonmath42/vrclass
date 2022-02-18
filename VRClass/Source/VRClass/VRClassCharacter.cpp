@@ -82,6 +82,7 @@ AVRClassCharacter::AVRClassCharacter()
 
 	// Uncomment the following line to turn motion controllers on by default:
 	//bUsingMotionControllers = true;
+	Http = &FHttpModule::Get();
 }
 
 void AVRClassCharacter::BeginPlay()
@@ -103,6 +104,44 @@ void AVRClassCharacter::BeginPlay()
 		VR_Gun->SetHiddenInGame(true, true);
 		Mesh1P->SetHiddenInGame(false, true);
 	}
+
+	ConnectToServer();
+}
+
+void AVRClassCharacter::ConnectToServer()
+{
+	TSharedRef<IHttpRequest, ESPMode::ThreadSafe> Request = Http->CreateRequest();
+
+	Request->OnProcessRequestComplete().BindUObject(this, &AVRClassCharacter::HandleResponse);
+	Request->SetURL("http://localhost/test");
+	Request->SetVerb("GET");
+	Request->SetHeader("Content-Type", "application/json");
+	Request->ProcessRequest();
+}
+
+void AVRClassCharacter::HandleResponse(FHttpRequestPtr Request, FHttpResponsePtr Response, bool Successful)
+{
+	if (Response->GetResponseCode() != 200)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 12.0f, FColor::White, TEXT("Error: Didn't Receive Response Code 200"));
+		return;
+	}
+
+	TSharedPtr<FJsonObject> JsonResponse;
+
+	const FString ResponseBody = Response->GetContentAsString();
+
+	TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(ResponseBody);
+
+	if (!FJsonSerializer::Deserialize(Reader, JsonResponse))
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 12.0f, FColor::White, TEXT("Error: Didn't Serialize Response Successfully"));
+		return;
+	}
+
+	const FString Message = JsonResponse->GetStringField("message");
+
+	GEngine->AddOnScreenDebugMessage(-1, 12.0f, FColor::White, Message);
 }
 
 //////////////////////////////////////////////////////////////////////////

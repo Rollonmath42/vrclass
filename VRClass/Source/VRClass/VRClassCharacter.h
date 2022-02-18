@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "Http.h"
+#include "Runtime/Engine/Public/EngineGlobals.h"
 #include "VRClassCharacter.generated.h"
 
 class UInputComponent;
@@ -144,5 +146,9 @@ public:
 	/** Returns FirstPersonCameraComponent subobject **/
 	UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
 
+private:
+	FHttpModule* Http;
+	void ConnectToServer();
+	void HandleResponse(FHttpRequestPtr Request, FHttpResponsePtr Response, bool Successful);
 };
 
