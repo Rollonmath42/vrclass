@@ -41,6 +41,14 @@ AVRClassCharacter::AVRClassCharacter()
 	Mesh1P->SetRelativeRotation(FRotator(0.0f, 90.0f, 0.0f));
 	Mesh1P->SetRelativeLocation(FVector(-0.5f, -4.4f, -155.7f));
 
+	Mesh3P = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("CharacterMesh3P"));
+	Mesh3P->SetOwnerNoSee(true);
+	Mesh3P->SetupAttachment(FirstPersonCameraComponent);
+	Mesh3P->bCastDynamicShadow = false;
+	Mesh3P->CastShadow = false;
+	Mesh3P->SetRelativeRotation(FRotator(0.0f, 90.0f, 0.0f));
+	Mesh3P->SetRelativeLocation(FVector(-0.5f, -4.4f, -155.7f));
+
 	// Note: The ProjectileClass and the skeletal mesh/anim blueprints for Mesh1P, FP_Gun, and VR_Gun 
 	// are set in the derived blueprint asset named MyCharacter to avoid direct content references in C++.
 
