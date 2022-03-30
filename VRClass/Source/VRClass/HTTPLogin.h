@@ -6,6 +6,10 @@
 #include "Http.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 
+THIRD_PARTY_INCLUDES_START
+#include <OpenSSL/1.1.1k/include/Win64/VS2015/openssl/sha.h>
+THIRD_PARTY_INCLUDES_END
+
 #include "HTTPLogin.generated.h"
 
 
