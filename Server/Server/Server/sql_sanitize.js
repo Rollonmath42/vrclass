@@ -1,5 +1,5 @@
 function doesNotContainInvalidCharacters(string) {
-    const nonAllowedCharactersRegEx = /[#$%^&()+\-=\[\]{};':"\\|<>\/?]/;
+    const nonAllowedCharactersRegEx = /[#$%^&+\-=\[\]{};':"\\|<>\/?]/;
 
     return (string.match(nonAllowedCharactersRegEx) == null);
 }

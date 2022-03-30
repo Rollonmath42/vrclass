@@ -5,47 +5,28 @@ const sqlServer = express();
 const database = require('./sql_dao.js');
 const url = require("url");
 
-sqlServer.get("/test1", (req, res) => {
+sqlServer.get("/vrclass_login", (req, res) => {
+    const origin = "https://vrclass";
+    const request = new URL("".concat(origin, req.url));
+    const displayName = "userName";
 
-    database.query(function (result, err) {
-        if (err) {
-            console.log(err);
-        } else {
-            res.send(result);
-        }
-    });
-});
-
-sqlServer.get("/test2", (req, res) => {
-
-    var testString = "Test' String";
     var queryParameters = {
-        "columns": ["userName", "userPass"],
+        "columns": ["count(*) as validLogin", displayName],
         "table": "sys.test_user",
-        "keys": ["userName"],
-        "terms": ["Stanley"]
+        "keys": ["userName", "userPass"],
+        "terms": [request.searchParams.get("user"), request.searchParams.get("pass")]
     };
 
     database.query(queryParameters, function (result, err) {
         if (err) {
             console.log(err);
         } else {
-            res.send(result);
+            if (result[0].validLogin == 1) {
+                res.send(result[0].userName);
+            } else {
+                res.send("invald login");
+            }            
         }
-    });
-});
-
-sqlServer.get("/vrclass_login", (req, res) => {
-    var request = http(req);
-    var userName = request.getHeader("user_name");
-    var userPass = requres.getHeader("password");
-
-    connection.query("select * from sys.test_user WHERE ('userName' = ? AND 'userPass' = ?", (error, result) => {
-        if (error) {
-            throw error;
-        }
-
-        res.send({ "message": `${result[0].userName}` });
     });
 });
 
