@@ -8,6 +8,7 @@ void UHTTPLogin::ConnectToServer(FString user, FString password)
     TSharedRef<IHttpRequest, ESPMode::ThreadSafe> Request = FHttpModule::Get().CreateRequest();
 
 	SHA256_CTX context;
+	password += user;
 	char* unhashed_password = TCHAR_TO_ANSI(*password);
 	unsigned char hashed_password[SHA256_DIGEST_LENGTH];
 
