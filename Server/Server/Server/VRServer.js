@@ -77,9 +77,12 @@ sqlServer.get("/vrclass_login", (req, res) => {
             database.query(queryParameters, function (result, err) {
                 if (err) {
                     console.log(err);
-                } else {
+                } else if (result[0].validLogin == 1) {
                     console.log("Response: ".concat(result[0].user_no));
-                    res.send(result[0].user_no);
+                    res.send(result);
+                } else {
+                    console.log("Response: invalid password");
+                    res.send("invald login");
                 }
             });
         } else {
