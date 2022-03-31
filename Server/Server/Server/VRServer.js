@@ -79,7 +79,7 @@ sqlServer.get("/vrclass_login", (req, res) => {
                     console.log(err);
                 } else {
                     console.log("Response: ".concat(result[0].user_no));
-                    res.send(result[0].display_name);
+                    res.send(result[0].user_no);
                 }
             });
         } else {
