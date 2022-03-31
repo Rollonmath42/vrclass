@@ -11,7 +11,7 @@ function isNotNull(string) {
 function isValid(string) {
     //var isValidString = isNotNull(string);
     if (isNotNull(string)) {
-        if (doesNotContainInvalidCharacters(string)) {
+        if (!isNaN(string) || doesNotContainInvalidCharacters(string)) {
             return true;
         }
     }
