@@ -663,3 +663,4 @@ FodyWeavers.xsd
 *.csr
 *.ext
 *.srl
+VRClass/Plugins/Fetch/Intermediate/*
