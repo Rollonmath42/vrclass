@@ -1,5 +1,7 @@
 require("dotenv").config();
 const http = require("http");
+const fs = require("fs");
+const https = require("https");
 const express = require("express");
 const sqlServer = express();
 const database = require('./sql_dao.js');
@@ -8,7 +10,7 @@ const crypto = require('crypto');
 
 
 sqlServer.get("/vrclass_register", (req, res) => {
-    const origin = "http://vrclass";
+    const origin = "https://vrclass";
     const request = new URL(origin.concat(req.url));
 
     var userName = request.searchParams.get("user");
@@ -48,7 +50,7 @@ sqlServer.get("/vrclass_register", (req, res) => {
 });
 
 sqlServer.get("/vrclass_login", (req, res) => {
-    const origin = "http://vrclass";
+    const origin = "https://vrclass";
     const request = new URL(origin.concat(req.url));
 
     var queryParameters = {
@@ -101,4 +103,9 @@ sqlServer.get("/vrclass_login", (req, res) => {
 });
 
 sqlServer.disable("x-powered-by");
-sqlServer.listen(80);
+//sqlServer.listen(80);
+let private_key = fs.readFileSync("./localhost.key", "utf8");
+let certificate = fs.readFileSync("./localhost.crt", "utf8");
+let credentials = { key: private_key, cert: certificate };
+let httpsServer = https.createServer(credentials, sqlServer);
+httpsServer.listen(443);

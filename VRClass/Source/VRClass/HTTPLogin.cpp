@@ -3,12 +3,17 @@
 
 #include "HTTPLogin.h"
 
-void UHTTPLogin::ConnectToServer(FString user, FString password)
+void UHTTPLogin::CreateDelegateConnection(FStringDelegate delegateVariable)
+{
+	classDelegateVariable = delegateVariable;
+}
+
+void UHTTPLogin::ConnectToServer(FString user, FString password, FString route)//, FHttpResponsePtr & Response)
 {
     TSharedRef<IHttpRequest, ESPMode::ThreadSafe> Request = FHttpModule::Get().CreateRequest();
 
 	SHA256_CTX context;
-	password += user;
+	//password += user;
 	char* unhashed_password = TCHAR_TO_ANSI(*password);
 	unsigned char hashed_password[SHA256_DIGEST_LENGTH];
 
@@ -27,7 +32,7 @@ void UHTTPLogin::ConnectToServer(FString user, FString password)
 
 	FString stringified_hashed_password(converted_hashed_password);
 
-    FString url = "localhost/vrclass_login?pass=" + stringified_hashed_password + "&user=" + user;
+    FString url = "localhost/vrclass_" + route + "?pass=" + stringified_hashed_password + "&user=" + user;
 
 	GEngine->AddOnScreenDebugMessage(-1, 12.0f, FColor::White, url);
 
@@ -36,6 +41,8 @@ void UHTTPLogin::ConnectToServer(FString user, FString password)
     Request->SetVerb("GET");
     Request->SetHeader("Content-Type", "application/json");
     Request->ProcessRequest();
+
+	//Response = Request->GetResponse();
 }
 
 void UHTTPLogin::HandleResponse(FHttpRequestPtr Request, FHttpResponsePtr Response, bool Successful)
@@ -51,4 +58,18 @@ void UHTTPLogin::HandleResponse(FHttpRequestPtr Request, FHttpResponsePtr Respon
 	const FString ResponseBody = Response->GetContentAsString();
 
 	GEngine->AddOnScreenDebugMessage(-1, 12.0f, FColor::White, ResponseBody);
+
+	//classDelegateVariable.ExecuteIfBound(ResponseBody, ResponseBody);
+
+	TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(ResponseBody);
+
+	if (!FJsonSerializer::Deserialize(Reader, JsonResponse))
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 12.0f, FColor::White, TEXT("Error: Didn't Serialize Response Successfully"));
+		return;
+	}
+
+	const FString Message = JsonResponse->GetStringField("message");
+
+	GEngine->AddOnScreenDebugMessage(-1, 12.0f, FColor::White, Message);
 }

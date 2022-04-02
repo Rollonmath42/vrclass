@@ -1,0 +1,27 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.Fetch.cpp.obj": [
+			"Fetch.cpp.obj",
+			"FetchAPI.cpp.obj",
+			"FetchRequest.cpp.obj",
+			"FetchResponse.cpp.obj",
+			"IFetch.cpp.obj",
+			"SimpleJson.cpp.obj",
+			"SimpleJsonObject.cpp.obj",
+			"SimpleJsonValue.cpp.obj",
+			"Types.cpp.obj"
+		],
+		"Module.Fetch.gen.cpp.obj": [
+			"Fetch.init.gen.cpp.obj",
+			"FetchAPI.gen.cpp.obj",
+			"FetchRequest.gen.cpp.obj",
+			"FetchResponse.gen.cpp.obj",
+			"IFetch.gen.cpp.obj",
+			"SimpleJson.gen.cpp.obj",
+			"SimpleJsonObject.gen.cpp.obj",
+			"SimpleJsonValue.gen.cpp.obj",
+			"Types.gen.cpp.obj"
+		]
+	}
+}

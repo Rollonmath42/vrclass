@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-Fetch.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Projects\VRClass\VRClass\Intermediate\Build\Win64\VRClassEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\Projects\VRClass\VRClass\Plugins\Fetch\Intermediate\Build\Win64\UE4Editor\Development\Fetch\Module.Fetch.cpp.obj"
+"D:\Projects\VRClass\VRClass\Plugins\Fetch\Intermediate\Build\Win64\UE4Editor\Development\Fetch\Module.Fetch.gen.cpp.obj"
+"D:\Projects\VRClass\VRClass\Plugins\Fetch\Intermediate\Build\Win64\UE4Editor\Development\Fetch\Default.rc2.res"
+/OUT:"D:\Projects\VRClass\VRClass\Plugins\Fetch\Intermediate\Build\Win64\UE4Editor\Development\Fetch\UE4Editor-Fetch.lib"

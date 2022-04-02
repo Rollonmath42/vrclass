@@ -1,0 +1,106 @@
+D:\Projects\VRClass\VRClass\Plugins\Fetch\Intermediate\Build\Win64\UE4Editor\Development\Fetch\Definitions.Fetch.h
+D:/Projects/VRClass/VRClass/Plugins/Fetch/Intermediate/Build/Win64/UE4Editor/Inc/Fetch/Fetch.init.gen.cpp
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+D:/Projects/VRClass/VRClass/Plugins/Fetch/Intermediate/Build/Win64/UE4Editor/Inc/Fetch/FetchAPI.gen.cpp
+D:\Projects\VRClass\VRClass\Plugins\Fetch\Source\Fetch/Public/FetchAPI.h
+D:\Projects\VRClass\VRClass\Plugins\Fetch\Source\Fetch\Public\FetchRequest.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/NoExportTypes.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Math/UnitConversion.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Math/UnitConversion.inl
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Internationalization/PolyglotTextData.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\AssetRegistry/ARFilter.h
+D:\Projects\VRClass\VRClass\Plugins\Fetch\Source\Fetch\Public\IFetch.h
+D:\Projects\VRClass\VRClass\Plugins\Fetch\Source\Fetch\Public\FetchResponse.h
+D:\Projects\VRClass\VRClass\Plugins\Fetch\Source\Fetch\Public\Types.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Json\Public\Json.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Misc/MonolithicHeaderBoilerplate.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Core.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Misc/MonolithicHeaderBoilerplate.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\GenericPlatform/GenericPlatformNamedPipe.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\HAL/PlatformNamedPipe.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/WindowsPlatformNamedPipe.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\GenericPlatform/GenericPlatformCriticalSection.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\HAL/PlatformFile.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Windows/WindowsPlatformFile.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\HAL/PlatformIncludes.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Misc/MonolithicHeaderBoilerplate.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Misc/MessageDialog.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\ProfilingDebugging/ScopedDebugInfo.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\ProfilingDebugging/ExternalProfiler.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Misc/StringUtility.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Serialization/NameAsStringProxyArchive.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Containers/MRUArray.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Containers/TransArray.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Containers/ArrayBuilder.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Misc/SingleThreadEvent.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\HAL/ThreadManager.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Containers/StaticBitArray.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Containers/MapBuilder.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\HAL/ThreadingBase.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Internationalization/TextLocalizationManagerGlobals.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Internationalization/Culture.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Logging/LogSuppressionInterface.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\HAL/OutputDevices.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Logging/LogScopedVerbosityOverride.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Misc/OutputDeviceNull.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Misc/OutputDeviceMemory.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Misc/OutputDeviceFile.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Misc/OutputDeviceDebug.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Misc/OutputDeviceArchiveWrapper.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Misc/OutputDeviceAnsiError.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Misc/TimeGuard.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Serialization/LargeMemoryWriter.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Serialization/LargeMemoryData.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Serialization/LargeMemoryReader.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Serialization/BufferArchive.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Serialization/ArrayReader.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Serialization/ArrayWriter.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Serialization/BufferWriter.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Misc/WildcardString.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Containers/CircularQueue.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Misc/OutputDeviceHelper.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Misc/ScopedSlowTask.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Misc/CallbackDevice.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Misc/LocalTimestampDirectoryVisitor.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\UObject/BlueprintsObjectVersion.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\UObject/BuildObjectVersion.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\UObject/CoreObjectVersion.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\UObject/EditorObjectVersion.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\UObject/FrameworkObjectVersion.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\UObject/MobileObjectVersion.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\UObject/NetworkingObjectVersion.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\UObject/OnlineObjectVersion.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\UObject/PhysicsObjectVersion.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\UObject/PlatformObjectVersion.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\UObject/SequencerObjectVersion.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\UObject/VRObjectVersion.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Misc/OutputDeviceConsole.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Core\Public\Misc/MonitoredProcess.h
+D:\Projects\VRClass\VRClass\Plugins\Fetch\Source\Fetch\Public\SimpleJsonObject.h
+D:\Projects\VRClass\VRClass\Plugins\Fetch\Intermediate\Build\Win64\UE4Editor\Inc\Fetch\SimpleJsonObject.generated.h
+D:\Projects\VRClass\VRClass\Plugins\Fetch\Source\Fetch\Public\SimpleJsonValue.h
+D:\Projects\VRClass\VRClass\Plugins\Fetch\Intermediate\Build\Win64\UE4Editor\Inc\Fetch\SimpleJsonValue.generated.h
+D:\Projects\VRClass\VRClass\Plugins\Fetch\Intermediate\Build\Win64\UE4Editor\Inc\Fetch\Types.generated.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime/Online/HTTP/Public/Http.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Online\HTTP\Public\HttpModule.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Online\HTTP\Public\Interfaces/IHttpRequest.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Online\HTTP\Public\Interfaces/IHttpBase.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Online\HTTP\Public\Interfaces/IHttpResponse.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Online\HTTP\Public\PlatformHttp.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Online\HTTP\Public\Windows/WindowsPlatformHttp.h
+D:\Programs\Epic Games\UE_4.27\Engine\Source\Runtime\Online\HTTP\Public\GenericPlatform/GenericPlatformHttp.h
+D:\Projects\VRClass\VRClass\Plugins\Fetch\Intermediate\Build\Win64\UE4Editor\Inc\Fetch\FetchResponse.generated.h
+D:\Projects\VRClass\VRClass\Plugins\Fetch\Intermediate\Build\Win64\UE4Editor\Inc\Fetch\IFetch.generated.h
+D:\Projects\VRClass\VRClass\Plugins\Fetch\Intermediate\Build\Win64\UE4Editor\Inc\Fetch\FetchRequest.generated.h
+D:\Projects\VRClass\VRClass\Plugins\Fetch\Intermediate\Build\Win64\UE4Editor\Inc\Fetch\FetchAPI.generated.h
+D:/Projects/VRClass/VRClass/Plugins/Fetch/Intermediate/Build/Win64/UE4Editor/Inc/Fetch/FetchRequest.gen.cpp
+D:/Projects/VRClass/VRClass/Plugins/Fetch/Intermediate/Build/Win64/UE4Editor/Inc/Fetch/FetchResponse.gen.cpp
+D:/Projects/VRClass/VRClass/Plugins/Fetch/Intermediate/Build/Win64/UE4Editor/Inc/Fetch/IFetch.gen.cpp
+D:/Projects/VRClass/VRClass/Plugins/Fetch/Intermediate/Build/Win64/UE4Editor/Inc/Fetch/SimpleJson.gen.cpp
+D:\Projects\VRClass\VRClass\Plugins\Fetch\Source\Fetch/Public/SimpleJson.h
+D:\Projects\VRClass\VRClass\Plugins\Fetch\Intermediate\Build\Win64\UE4Editor\Inc\Fetch\SimpleJson.generated.h
+D:/Projects/VRClass/VRClass/Plugins/Fetch/Intermediate/Build/Win64/UE4Editor/Inc/Fetch/SimpleJsonObject.gen.cpp
+D:/Projects/VRClass/VRClass/Plugins/Fetch/Intermediate/Build/Win64/UE4Editor/Inc/Fetch/SimpleJsonValue.gen.cpp
+D:/Projects/VRClass/VRClass/Plugins/Fetch/Intermediate/Build/Win64/UE4Editor/Inc/Fetch/Types.gen.cpp
