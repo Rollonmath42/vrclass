@@ -25,7 +25,7 @@ sqlServer.get("/vrclass_register", (req, res) => {
     database.query(queryParameters, function (result, err) {
         if (err) {
             console.log(err);
-            res.send(create_response("Something went wrong, try again", 1, {}));
+            res.send(create_response("Something went wrong, please try again", 1, {}));
         } else if (result[0].userNameExists > 0) {
             console.log("username is not available");
             res.send(create_response("Username not available", 1, {}));
@@ -40,7 +40,7 @@ sqlServer.get("/vrclass_register", (req, res) => {
             database.insert(queryParameters, function (result, err) {
                 if (err) {
                     console.log(err);
-                    res.send(create_response("Something went wrong, try again", 1, {}));
+                    res.send(create_response("Something went wrong, please try again", 1, {}));
                 } else {
                     console.log("Response: ");
                     console.log(result);
@@ -67,7 +67,7 @@ sqlServer.get("/vrclass_login", (req, res) => {
 
         if (err) {
             console.log(err);
-            res.send(create_response("Something went wrong, try again", 1, {}));
+            res.send(create_response("Something went wrong, please try again", 1, {}));
         } else if (result[0].userExists == 1) {
 
             const hash = crypto.createHash('sha256');
@@ -83,7 +83,7 @@ sqlServer.get("/vrclass_login", (req, res) => {
             database.query(queryParameters, function (result, err) {
                 if (err) {
                     console.log(err);
-                    res.send(create_response("Something went wrong, try again", 1, {}));
+                    res.send(create_response("Something went wrong, please try again", 1, {}));
                 } else if (result[0].validLogin == 1) {
                     console.log("Response: ".concat(result[0].user_no));
                     res.send(create_response("OK", 0, {user_no: result[0].user_no}));
@@ -94,7 +94,7 @@ sqlServer.get("/vrclass_login", (req, res) => {
             });
         } else {
             console.log("Response: invalid login");
-            res.send(create_response("Invalid Credentials", 1, {}));
+            res.send(create_response("Invalid credentials", 1, {}));
         }
 
     });
