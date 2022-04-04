@@ -61,7 +61,6 @@ AVRClassCharacter::AVRClassCharacter()
 
 	// Uncomment the following line to turn motion controllers on by default:
 	//bUsingMotionControllers = true;
-	Http = &FHttpModule::Get();
 }
 
 void AVRClassCharacter::BeginPlay()
@@ -78,11 +77,9 @@ void AVRClassCharacter::BeginPlay()
 	{
 		Mesh1P->SetHiddenInGame(false, true);
 	}
-
-	ConnectToServer();
 }
 
-void AVRClassCharacter::ConnectToServer()
+/*void AVRClassCharacter::ConnectToServer()
 {
 	TSharedRef<IHttpRequest, ESPMode::ThreadSafe> Request = Http->CreateRequest();
 
@@ -116,7 +113,7 @@ void AVRClassCharacter::HandleResponse(FHttpRequestPtr Request, FHttpResponsePtr
 	const FString Message = JsonResponse->GetStringField("message");
 
 	GEngine->AddOnScreenDebugMessage(-1, 12.0f, FColor::White, Message);
-}
+}*/
 
 //////////////////////////////////////////////////////////////////////////
 // Input

@@ -656,3 +656,11 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudio,vcpkg,c++,unrealengine,node
+
+*.key
+*.pem
+*.crt
+*.csr
+*.ext
+*.srl
+VRClass/Plugins/Fetch/Intermediate/*
