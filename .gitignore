@@ -664,3 +664,8 @@ FodyWeavers.xsd
 *.ext
 *.srl
 VRClass/Plugins/Fetch/Intermediate/*
+VRClass/Plugins/Fetch/Binaries/*
+VRClass/Plugins/*/Intermediate/*
+VRClass/Plugins/*/Binaries/*
+VRClass/Plugins/AdvancedSessions/Intermediate/*
+VRClass/Plugins/AdvancedSessions/Binaries/*
