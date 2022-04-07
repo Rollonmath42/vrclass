@@ -120,4 +120,4 @@ let private_key = fs.readFileSync("./localhost.key", "utf8");
 let certificate = fs.readFileSync("./localhost.crt", "utf8");
 let credentials = { key: private_key, cert: certificate };
 let httpsServer = https.createServer(credentials, sqlServer);
-httpsServer.listen(443);
+httpsServer.listen(25565);
