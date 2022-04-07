@@ -6,8 +6,8 @@
 /NAME:"UE4Editor-Fetch.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"D:\Projects\VRClass\VRClass\Intermediate\Build\Win64\VRClassEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
-"D:\Projects\VRClass\VRClass\Plugins\Fetch\Intermediate\Build\Win64\UE4Editor\Development\Fetch\Module.Fetch.cpp.obj"
-"D:\Projects\VRClass\VRClass\Plugins\Fetch\Intermediate\Build\Win64\UE4Editor\Development\Fetch\Module.Fetch.gen.cpp.obj"
-"D:\Projects\VRClass\VRClass\Plugins\Fetch\Intermediate\Build\Win64\UE4Editor\Development\Fetch\Default.rc2.res"
-/OUT:"D:\Projects\VRClass\VRClass\Plugins\Fetch\Intermediate\Build\Win64\UE4Editor\Development\Fetch\UE4Editor-Fetch.lib"
+"D:\Documents\GitHub\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\tyler\Documents\Unreal Projects\VRClass\vrclass\VRClass\Plugins\Fetch\Intermediate\Build\Win64\UE4Editor\Development\Fetch\Module.Fetch.cpp.obj"
+"C:\Users\tyler\Documents\Unreal Projects\VRClass\vrclass\VRClass\Plugins\Fetch\Intermediate\Build\Win64\UE4Editor\Development\Fetch\Module.Fetch.gen.cpp.obj"
+"D:\Documents\GitHub\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Development\Default.rc2.res"
+/OUT:"C:\Users\tyler\Documents\Unreal Projects\VRClass\vrclass\VRClass\Plugins\Fetch\Intermediate\Build\Win64\UE4Editor\Development\Fetch\UE4Editor-Fetch.lib"

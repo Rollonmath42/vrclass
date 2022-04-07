@@ -75,7 +75,7 @@ void ULoginUserCallbackProxy::OnCompleted(int32 LocalUserNum, bool bWasSuccessfu
 			{
 				Identity->ClearOnLoginCompleteDelegate_Handle(Player->GetControllerId(), DelegateHandle);
 			}
-			Player->SetCachedUniqueNetId(UniqueID);
+			Player->SetCachedUniqueNetId(UniqueID.GetUniqueNetId());
 		}
 
 		if (APlayerState* State = PlayerControllerWeakPtr->PlayerState)

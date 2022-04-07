@@ -1,5 +1,5 @@
 /MANIFEST:EMBED
-/MANIFESTINPUT:"D:\Programs\Epic Games\UE_4.27\Engine\Build\Windows\Resources\Default-Win64.manifest"
+/MANIFESTINPUT:D:\Documents\GitHub\UnrealEngine\Engine\Build\Windows\Resources\Default-Win64.manifest
 /NOLOGO
 /DEBUG
 /errorReport:prompt
@@ -18,8 +18,8 @@
 /ignore:4099
 /DELAYLOAD:"d3d12.dll"
 /DELAYLOAD:"DBGHELP.DLL"
-/LIBPATH:"D:\Programs\VS\VC\Tools\MSVC\14.29.30133\lib\x64"
-/LIBPATH:"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\lib\um\x64"
+/LIBPATH:"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\lib\x64"
+/LIBPATH:"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.2\lib\um\x64"
 /LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\ucrt\x64"
 /LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\um\x64"
 /NODEFAULTLIB:"LIBCMT"
@@ -33,18 +33,18 @@
 /NODEFAULTLIB:"LIBCD"
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN
-"D:\Projects\VRClass\VRClass\Intermediate\Build\Win64\VRClassEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
-"D:\Projects\VRClass\VRClass\Plugins\Fetch\Intermediate\Build\Win64\UE4Editor\Development\Fetch\Module.Fetch.cpp.obj"
-"D:\Projects\VRClass\VRClass\Plugins\Fetch\Intermediate\Build\Win64\UE4Editor\Development\Fetch\Module.Fetch.gen.cpp.obj"
-"D:\Projects\VRClass\VRClass\Plugins\Fetch\Intermediate\Build\Win64\UE4Editor\Development\Fetch\Default.rc2.res"
-"D:\Programs\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Development\CoreUObject\UE4Editor-CoreUObject.lib"
-"D:\Programs\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\UE4Editor-Engine.lib"
-"D:\Programs\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Development\Slate\UE4Editor-Slate.lib"
-"D:\Programs\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Development\SlateCore\UE4Editor-SlateCore.lib"
-"D:\Programs\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Development\HTTP\UE4Editor-HTTP.lib"
-"D:\Programs\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Development\Json\UE4Editor-Json.lib"
-"D:\Programs\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Development\JsonUtilities\UE4Editor-JsonUtilities.lib"
-"D:\Programs\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Development\Core\UE4Editor-Core.lib"
+"D:\Documents\GitHub\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\tyler\Documents\Unreal Projects\VRClass\vrclass\VRClass\Plugins\Fetch\Intermediate\Build\Win64\UE4Editor\Development\Fetch\Module.Fetch.cpp.obj"
+"C:\Users\tyler\Documents\Unreal Projects\VRClass\vrclass\VRClass\Plugins\Fetch\Intermediate\Build\Win64\UE4Editor\Development\Fetch\Module.Fetch.gen.cpp.obj"
+"D:\Documents\GitHub\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Development\Default.rc2.res"
+"D:\Documents\GitHub\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Development\CoreUObject\UE4Editor-CoreUObject.lib"
+"D:\Documents\GitHub\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\UE4Editor-Engine.lib"
+"D:\Documents\GitHub\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Development\Slate\UE4Editor-Slate.lib"
+"D:\Documents\GitHub\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Development\SlateCore\UE4Editor-SlateCore.lib"
+"D:\Documents\GitHub\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Development\HTTP\UE4Editor-HTTP.lib"
+"D:\Documents\GitHub\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Development\Json\UE4Editor-Json.lib"
+"D:\Documents\GitHub\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Development\JsonUtilities\UE4Editor-JsonUtilities.lib"
+"D:\Documents\GitHub\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Development\Core\UE4Editor-Core.lib"
 "delayimp.lib"
 "wininet.lib"
 "rpcrt4.lib"
@@ -69,7 +69,7 @@
 "setupapi.lib"
 "dwmapi.lib"
 "imm32.lib"
-/OUT:"D:\Projects\VRClass\VRClass\Plugins\Fetch\Binaries\Win64\UE4Editor-Fetch.dll"
-/IMPLIB:"D:\Projects\VRClass\VRClass\Plugins\Fetch\Intermediate\Build\Win64\UE4Editor\Development\Fetch\UE4Editor-Fetch.suppressed.lib"
-/PDB:"D:\Projects\VRClass\VRClass\Plugins\Fetch\Binaries\Win64\UE4Editor-Fetch.pdb"
+/OUT:"C:\Users\tyler\Documents\Unreal Projects\VRClass\vrclass\VRClass\Plugins\Fetch\Binaries\Win64\UE4Editor-Fetch.dll"
+/IMPLIB:"C:\Users\tyler\Documents\Unreal Projects\VRClass\vrclass\VRClass\Plugins\Fetch\Intermediate\Build\Win64\UE4Editor\Development\Fetch\UE4Editor-Fetch.suppressed.lib"
+/PDB:"C:\Users\tyler\Documents\Unreal Projects\VRClass\vrclass\VRClass\Plugins\Fetch\Binaries\Win64\UE4Editor-Fetch.pdb"
 /ignore:4078
