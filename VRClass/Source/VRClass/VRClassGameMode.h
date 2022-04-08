@@ -3,11 +3,11 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/GameModeBase.h"
+#include "GameFramework/GameMode.h"
 #include "VRClassGameMode.generated.h"
 
 UCLASS(minimalapi)
-class AVRClassGameMode : public AGameModeBase
+class AVRClassGameMode : public AGameMode
 {
 	GENERATED_BODY()
 
