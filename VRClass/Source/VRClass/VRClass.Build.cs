@@ -8,6 +8,14 @@ public class VRClass : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay", "Http", "Json", "JsonUtilities", "OpenSSL" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay", "Http", "Json", "JsonUtilities", "OpenSSL", 
+			"OnlineSubsystem", "OnlineSubsystemUtils" });
+		
+		PrivateDependencyModuleNames.AddRange(new string[] {});
+		PrivateDependencyModuleNames.Add("OnlineSubsystem");
+		//PrivateDependencyModuleNames.Add("OnlineSubsystemNull");
+
+		DynamicallyLoadedModuleNames.AddRange(new string[] {});
+		DynamicallyLoadedModuleNames.Add("OnlineSubsystemNull");
 	}
 }
