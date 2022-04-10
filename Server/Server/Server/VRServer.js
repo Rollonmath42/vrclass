@@ -8,6 +8,56 @@ const database = require('./sql_dao.js');
 const url = require("url");
 const crypto = require('crypto');
 
+let activity_database = {
+    "carlostwo" : [{
+        name : "Test Activity",
+        gametype : "BasicQuiz",
+        data : {
+            questions : [{
+                question : "This is a test question",
+                answers : [
+                    {
+                        text : "This is the correct answer",
+                        isCorrect : true
+                    },
+                    {
+                        text : "This is the wrong answer",
+                        isCorrect : false
+                    },
+                    {
+                        text : "This is another wrong answer",
+                        isCorrect : false
+                    },
+                    {
+                        text : "Nope",
+                        isCorrect : false
+                    }
+                ]
+            }, 
+            {
+                question : "This is the second question",
+                answers : [
+                    {
+                        text : "Don't pick me",
+                        isCorrect : false
+                    },
+                    {
+                        text : "I'm not correct",
+                        isCorrect : false
+                    },
+                    {
+                        text : "Even if I was the right answer, I wouldn't tell you!",
+                        isCorrect : true
+                    },
+                    {
+                        text : "Where am I?",
+                        isCorrect : false
+                    }
+                ]
+            }]
+        }
+    }]
+};
 
 sqlServer.get("/vrclass_register", (req, res) => {
     const origin = "https://vrclass";
@@ -105,6 +155,10 @@ sqlServer.get("/vrclass_login", (req, res) => {
         "keys": ["username", "password"],
         "terms": [request.searchParams.get("user"), request.searchParams.get("pass")]
     };*/
+});
+
+sqlServer.get("/vrclass_activity_list", (req, res) => {
+    res.send(create_response("OK", 0, activity_database["carlostwo"]));
 });
 
 function create_response(message, error, data) {
