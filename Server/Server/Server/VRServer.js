@@ -116,8 +116,12 @@ function create_response(message, error, data) {
 }
 
 sqlServer.disable("x-powered-by");
-let private_key = fs.readFileSync("./localhost.key", "utf8");
-let certificate = fs.readFileSync("./localhost.crt", "utf8");
+//Swap the commented out lines with the uncommented lines as needed for testing
+//let private_key = fs.readFileSync("./localhost.key", "utf8");
+//let certificate = fs.readFileSync("./localhost.crt", "utf8");
+let private_key = fs.readFileSync("./rollonsd2tools.key", "utf8");
+let certificate = fs.readFileSync("./rollonsd2tools.crt", "utf8");
 let credentials = { key: private_key, cert: certificate };
 let httpsServer = https.createServer(credentials, sqlServer);
+//httpsServer.listen(443);
 httpsServer.listen(25565);

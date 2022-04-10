@@ -13,13 +13,12 @@
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
 	"Installed": false,
-	"EngineVersion": "4.27.0",
 	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/e8098c9d0b414ad4924296c8a4495668",
 	"Modules": [
 		{
 			"Name": "Fetch",
 			"Type": "Runtime",
-			"LoadingPhase": "Default",
+			"LoadingPhase": "PreDefault",
 			"WhitelistPlatforms": [
 				"Win64",
 				"Win32",
