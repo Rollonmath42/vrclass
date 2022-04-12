@@ -10,6 +10,48 @@ const crypto = require('crypto');
 
 let activity_database = {
     "carlostwo" : [{
+        name : "Test Jeoparody",
+        gametype : "Jeoparody",
+        data : {
+            "0" : {
+                name : "category 0",
+                tiers : {
+                    "0" : "this is cat 0 tier 0",
+                    "1" : "this is cat 0 tier 1",
+                    "2" : "this is cat 0 tier 2",
+                    "3" : "this is cat 0 tier 3"
+                }
+            },
+            "1" : {
+                name : "category 1",
+                tiers : {
+                    "0" : "this is cat 1 tier 0",
+                    "1" : "this is cat 1 tier 1",
+                    "2" : "this is cat 1 tier 2",
+                    "3" : "this is cat 1 tier 3"
+                }
+            },
+            "2" : {
+                name : "category 2",
+                tiers : {
+                    "0" : "this is cat 2 tier 0",
+                    "1" : "this is cat 2 tier 1",
+                    "2" : "this is cat 2 tier 2",
+                    "3" : "this is cat 2 tier 3"
+                }
+            },
+            "3" : {
+                name : "category 3",
+                tiers : {
+                    "0" : "this is cat 3 tier 0",
+                    "1" : "this is cat 3 tier 1",
+                    "2" : "this is cat 3 tier 2",
+                    "3" : "this is cat 3 tier 3"
+                }
+            }
+        }
+    },
+    {
         name : "Test Activity",
         gametype : "BasicQuiz",
         data : {
