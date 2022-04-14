@@ -102,6 +102,8 @@ let activity_database = {
     }]
 };
 
+let room_code_database = {};
+
 sqlServer.get("/vrclass_register", (req, res) => {
     const origin = "https://vrclass";
     const request = new URL(origin.concat(req.url));
@@ -344,6 +346,38 @@ sqlServer.get("/vrclass_switch_activity_list", (req, res) => {
 
     activity_switched = !activity_switched;
     res.send(create_response("OK", 0, {switched : activity_switched}));
+});
+
+sqlServer.get("/vrclass_register_session", (req, res) => {
+    let origin = "https://vrclass";
+    let request = new URL(origin.concat(req.url));
+
+    let hash = crypto.createHash('sha256');
+    hash.update(request.searchParams.get("user").concat(Date.now()));
+
+    let room_code = hash.digest("hex").substr(0, 6).toUpperCase();
+
+    room_code_database[room_code] = req.ip.split(":").pop();
+    
+    res.send(create_response("OK", 0, {room_code}));
+});
+
+sqlServer.get("/vrclass_resolve_room_code", (req, res) => {
+    let origin = "https://vrclass";
+    let request = new URL(origin.concat(req.url));
+    let room_code = request.searchParams.get("room_code");
+
+    if(!room_code || room_code.length != 6) {
+        res.send(create_response("That was an invalid room code.", 0, {ip: room_code_database[room_code]}));
+        return;
+    }
+
+    if(room_code_database[room_code]) {
+        res.send(create_response("OK", 0, {ip: room_code_database[room_code]}));
+        return;
+    }
+
+    res.send(create_response("That was an invalid room code.", 1, {ip: room_code_database[room_code]}));
 });
 
 function create_response(message, error, data) {
