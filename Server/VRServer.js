@@ -121,11 +121,14 @@ sqlServer.get("/vrclass_register", (req, res) => {
         if (err) {
             console.log(err);
             res.send(create_response("Something went wrong, please try again", 1, {}));
-        } else if (result[0].userNameExists > 0) {
-            console.log("username is not available");
+            return;
+        } 
+        else if (result[0].userNameExists > 0) {
+            console.log("Username is not available");
             res.send(create_response("Username not available", 1, {}));
-        } else {
-
+            return;
+        } 
+        else {
             queryParameters = {
                 "table": "sys.Users",
                 "columns": ["username", "password"],
@@ -136,15 +139,14 @@ sqlServer.get("/vrclass_register", (req, res) => {
                 if (err) {
                     console.log(err);
                     res.send(create_response("Something went wrong, please try again", 1, {}));
-                } else {
-                    console.log("Response: ");
-                    console.log(result);
+                } 
+                else {
+                    console.log("Successfully registered the user");
                     res.send(create_response("OK", 0, {}));
                 }
             });
         }
     });
-
 });
 
 sqlServer.get("/vrclass_login", (req, res) => {
@@ -159,12 +161,12 @@ sqlServer.get("/vrclass_login", (req, res) => {
     };
 
     database.query(queryParameters, function (result, err) {
-
         if (err) {
             console.log(err);
             res.send(create_response("Something went wrong, please try again", 1, {}));
-        } else if (result[0].userExists == 1) {
-
+            return;
+        } 
+        else if (result[0].userExists == 1) {
             const hash = crypto.createHash('sha256');
             hash.update(request.searchParams.get("pass").concat(result[0].salt));
 
@@ -179,27 +181,24 @@ sqlServer.get("/vrclass_login", (req, res) => {
                 if (err) {
                     console.log(err);
                     res.send(create_response("Something went wrong, please try again", 1, {}));
+                    return;
                 } else if (result[0].validLogin == 1) {
-                    console.log("Response: ".concat(result[0].user_no));
+                    console.log("Successfully logged in");
                     res.send(create_response("OK", 0, {user_no: result[0].user_no}));
+                    return;
                 } else {
-                    console.log("Response: invalid password");
+                    console.log("Invalid password");
                     res.send(create_response("Invalid credentials", 1, {}));
+                    return;
                 }
             });
-        } else {
-            console.log("Response: invalid login");
+        } 
+        else {
+            console.log("Invalid login");
             res.send(create_response("Invalid credentials", 1, {}));
+            return;
         }
-
     });
-
-    /*var queryParameters = {
-        "columns": ["count(*) as validLogin", "user_no"],
-        "table": "sys.Users",
-        "keys": ["username", "password"],
-        "terms": [request.searchParams.get("user"), request.searchParams.get("pass")]
-    };*/
 });
 
 sqlServer.get("/vrclass_activity_list", (req, res) => {

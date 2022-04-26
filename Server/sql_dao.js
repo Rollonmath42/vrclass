@@ -122,30 +122,29 @@ function buildValuesInsert(values, terms) {
 }
 
 function insert(queryParameters, callback) {
-
     var insertString = buildInsert(queryParameters);
-    console.log(insertString);
+
     if (!insertString == "") {
         connection.query(insertString, (error, returnValue) => {
             if (error) callback(error);
             callback(returnValue);
         });
-    } else {
+    }
+    else {
         callback("");
     }
 }
 
 function query(queryParameters, callback) {
-
     var queryString = buildQuery(queryParameters);
-    console.log(queryString);
 
     if (!queryString == "") {
         connection.query(queryString, (error, returnValue) => {
             if (error) callback(error);
             callback(returnValue);
         });
-    } else {
+    }
+    else {
         callback("");
     }
 };
