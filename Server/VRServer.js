@@ -192,14 +192,14 @@ sqlServer.get("/vrclass_login", (req, res) => {
                     res.send(create_response("OK", 0, {user_no: result[0].user_no}));
                     return;
                 } else {
-                    console.log("Invalid password");
+                    console.log("Invalid credentials");
                     res.send(create_response("Invalid credentials", 1, {}));
                     return;
                 }
             });
         } 
         else {
-            console.log("Invalid login");
+            console.log("Invalid credentials");
             res.send(create_response("Invalid credentials", 1, {}));
             return;
         }
