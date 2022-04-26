@@ -108,8 +108,6 @@ sqlServer.get("/vrclass_register", (req, res) => {
     const origin = "https://vrclass";
     const request = new URL(origin.concat(req.url));
 
-    var userName = request.searchParams.get("user");
-
     var queryParameters = {
         "columns": ["count(*) as userNameExists"],
         "table": "sys.Users",
@@ -129,10 +127,13 @@ sqlServer.get("/vrclass_register", (req, res) => {
             return;
         } 
         else {
+            const hash = crypto.createHash('sha256');
+            hash.update(request.searchParams.get("pass").concat(request.searchParams.get("user")));
+
             queryParameters = {
                 "table": "sys.Users",
                 "columns": ["username", "password"],
-                "values": [request.searchParams.get("user"), request.searchParams.get("pass")]
+                "values": [request.searchParams.get("user"), hash.digest("hex")]
             }
 
             database.insert(queryParameters, function (result, err) {
@@ -167,8 +168,12 @@ sqlServer.get("/vrclass_login", (req, res) => {
             return;
         } 
         else if (result[0].userExists == 1) {
-            const hash = crypto.createHash('sha256');
-            hash.update(request.searchParams.get("pass").concat(result[0].salt));
+            let hash = crypto.createHash('sha256');
+            hash.update(request.searchParams.get("pass").concat(request.searchParams.get("user")));
+            let hashed_password = hash.digest("hex");
+            
+            hash = crypto.createHash('sha256');
+            hash.update(hashed_password.concat(result[0].salt));
 
             var queryParameters = {
                 "columns": ["count(*) as validLogin", "user_no"],
